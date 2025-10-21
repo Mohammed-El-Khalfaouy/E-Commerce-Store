@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LUXE - Premium Fashion Store</title>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">LUXE</div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" data-en="Home" data-fr="Accueil" data-ar="الرئيسية">Home</a></li>
+                <li><a href="#categories" data-en="Categories" data-fr="Catégories" data-ar="الفئات">Categories</a></li>
+                <li><a href="#products" data-en="Products" data-fr="Produits" data-ar="المنتجات">Products</a></li>
+                <li><a href="#features" data-en="Features" data-fr="Caractéristiques" data-ar="المميزات">Features</a></li>
+                <li><a href="#contact" data-en="Contact" data-fr="Contact" data-ar="اتصل بنا">Contact</a></li>
+            </ul>
+            <div class="nav-icons">
+                <!-- Language Selector -->
+                <div class="language-selector">
+                    <button class="nav-icon lang-btn" id="langBtn" aria-label="Language">
+                        <i class="fas fa-globe"></i>
+                    </button>
+                    <div class="language-dropdown" id="langDropdown">
+                        <button class="lang-option active" data-lang="en">
+                            <span class="flag">🇬🇧</span> English
+                        </button>
+                        <button class="lang-option" data-lang="fr">
+                            <span class="flag">🇫🇷</span> Français
+                        </button>
+                        <button class="lang-option" data-lang="ar">
+                            <span class="flag">🇸🇦</span> العربية
+                        </button>
+                    </div>
+                </div>
+                <button class="nav-icon" id="themeToggle" aria-label="Toggle Theme">
+                    <i class="fas fa-moon" id="themeIcon"></i>
+                </button>
+                <button class="nav-icon" id="searchBtn" aria-label="Search">
+                    <i class="fas fa-search"></i>
+                </button>
+                <button class="nav-icon" id="wishlistBtn" aria-label="Wishlist">
+                    <i class="fas fa-heart"></i>
+                    <span class="wishlist-count" id="wishlistCount">0</span>
+                </button>
+                <button class="nav-icon" id="cartBtn" aria-label="Shopping Cart">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count" id="cartCount">0</span>
+                </button>
+                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Mobile Menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 data-en="Discover Your Perfect Style" 
+                    data-fr="Découvrez Votre Style Parfait" 
+                    data-ar="اكتشف أسلوبك المثالي">Discover Your Perfect Style</h1>
+                <p data-en="Elevate your wardrobe with our curated collection of premium shoes, stylish t-shirts, and exclusive clothing. Where fashion meets comfort." 
+                   data-fr="Élevez votre garde-robe avec notre collection de chaussures premium, t-shirts élégants et vêtements exclusifs. Où la mode rencontre le confort." 
+                   data-ar="ارتقِ بخزانة ملابسك مع مجموعتنا المختارة من الأحذية الفاخرة والقمصان الأنيقة والملابس الحصرية. حيث تلتقي الموضة بالراحة.">
+                   Elevate your wardrobe with our curated collection of premium shoes, stylish t-shirts, and exclusive clothing. Where fashion meets comfort.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#products" class="btn btn-primary" data-en="Shop Now" data-fr="Acheter Maintenant" data-ar="تسوق الآن">Shop Now</a>
+                    <a href="#categories" class="btn btn-secondary" data-en="Explore Collections" data-fr="Explorer les Collections" data-ar="استكشف المجموعات">Explore Collections</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="hero-image-main">
+                    <img src="images/hero.jpg" alt="Fashion Hero" class="hero-img">
+                    <div class="floating-badge badge-1" data-en="New Arrival" data-fr="Nouvelle Arrivée" data-ar="وصول جديد">New Arrival</div>
+                    <div class="floating-badge badge-2">50% Off</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories" id="categories">
+        <div class="section-header">
+            <h2 data-en="Shop by Category" data-fr="Acheter par Catégorie" data-ar="تسوق حسب الفئة">Shop by Category</h2>
+            <p data-en="Explore our premium collection across different categories" 
+               data-fr="Explorez notre collection premium dans différentes catégories" 
+               data-ar="استكشف مجموعتنا المميزة عبر فئات مختلفة">Explore our premium collection across different categories</p>
+        </div>
+        <div class="categories-grid">
+            <div class="category-card" data-category="shoes">
+                <div class="category-image">
+                    <img src="images/shoes.jpg" alt="Shoes Category">
+                </div>
+                <div class="category-info">
+                    <h3 data-en="Premium Shoes" data-fr="Chaussures Premium" data-ar="أحذية فاخرة">Premium Shoes</h3>
+                    <p data-en="Step into style with our exclusive footwear collection" 
+                       data-fr="Entrez dans le style avec notre collection de chaussures exclusive" 
+                       data-ar="ادخل إلى الأناقة مع مجموعة الأحذية الحصرية">Step into style with our exclusive footwear collection</p>
+                </div>
+            </div>
+            <div class="category-card" data-category="tshirts">
+                <div class="category-image">
+                    <img src="images/tshirts.jpg" alt="T-Shirts Category">
+                </div>
+                <div class="category-info">
+                    <h3 data-en="Designer T-Shirts" data-fr="T-Shirts Design" data-ar="قمصان مصممة">Designer T-Shirts</h3>
+                    <p data-en="Comfort meets fashion in every stitch" 
+                       data-fr="Le confort rencontre la mode dans chaque point" 
+                       data-ar="الراحة تلتقي بالموضة في كل خياطة">Comfort meets fashion in every stitch</p>
+                </div>
+            </div>
+            <div class="category-card" data-category="clothing">
+                <div class="category-image">
+                    <img src="images/elegant.jpg" alt="Clothing Category">
+                </div>
+                <div class="category-info">
+                    <h3 data-en="Elegant Clothing" data-fr="Vêtements Élégants" data-ar="ملابس أنيقة">Elegant Clothing</h3>
+                    <p data-en="Sophisticated styles for every occasion" 
+                       data-fr="Styles sophistiqués pour chaque occasion" 
+                       data-ar="أنماط راقية لكل مناسبة">Sophisticated styles for every occasion</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products" id="products">
+        <div class="products-container">
+            <div class="section-header">
+                <h2 data-en="Featured Products" data-fr="Produits Vedettes" data-ar="منتجات مميزة">Featured Products</h2>
+                <p data-en="Handpicked items just for you" data-fr="Articles sélectionnés pour vous" data-ar="عناصر مختارة خصيصًا لك">Handpicked items just for you</p>
+            </div>
+            
+            <div class="filter-bar">
+                <button class="filter-btn active" data-filter="all" data-en="All Products" data-fr="Tous les Produits" data-ar="جميع المنتجات">All Products</button>
+                <button class="filter-btn" data-filter="shoes" data-en="Shoes" data-fr="Chaussures" data-ar="أحذية">Shoes</button>
+                <button class="filter-btn" data-filter="tshirts" data-en="T-Shirts" data-fr="T-Shirts" data-ar="قمصان">T-Shirts</button>
+                <button class="filter-btn" data-filter="clothing" data-en="Clothing" data-fr="Vêtements" data-ar="ملابس">Clothing</button>
+            </div>
+
+            <div class="products-grid" id="productsGrid">
+                <!-- Products will be dynamically generated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-shipping-fast"></i>
+                </div>
+                <h3 data-en="Free Shipping" data-fr="Livraison Gratuite" data-ar="شحن مجاني">Free Shipping</h3>
+                <p data-en="Free delivery on orders over $100. Shop with confidence." 
+                   data-fr="Livraison gratuite sur les commandes de plus de 100$. Achetez en toute confiance." 
+                   data-ar="توصيل مجاني للطلبات التي تزيد عن 100 دولار. تسوق بثقة.">Free delivery on orders over $100. Shop with confidence.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-undo"></i>
+                </div>
+                <h3 data-en="Easy Returns" data-fr="Retours Faciles" data-ar="إرجاع سهل">Easy Returns</h3>
+                <p data-en="30-day return policy. Your satisfaction is guaranteed." 
+                   data-fr="Politique de retour de 30 jours. Votre satisfaction est garantie." 
+                   data-ar="سياسة إرجاع لمدة 30 يومًا. رضاك مضمون.">30-day return policy. Your satisfaction is guaranteed.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-lock"></i>
+                </div>
+                <h3 data-en="Secure Payment" data-fr="Paiement Sécurisé" data-ar="دفع آمن">Secure Payment</h3>
+                <p data-en="100% secure transactions. Your data is protected." 
+                   data-fr="Transactions 100% sécurisées. Vos données sont protégées." 
+                   data-ar="معاملات آمنة 100٪. بياناتك محمية.">100% secure transactions. Your data is protected.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-headset"></i>
+                </div>
+                <h3 data-en="24/7 Support" data-fr="Support 24/7" data-ar="دعم 24/7">24/7 Support</h3>
+                <p data-en="Round-the-clock customer service. We're here to help." 
+                   data-fr="Service client 24h/24. Nous sommes là pour vous aider." 
+                   data-ar="خدمة عملاء على مدار الساعة. نحن هنا للمساعدة.">Round-the-clock customer service. We're here to help.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="section-header">
+            <h2 data-en="Contact Us" data-fr="Contactez-nous" data-ar="اتصل بنا">Contact Us</h2>
+            <p data-en="Get in touch with us for any inquiries" 
+               data-fr="Contactez-nous pour toute demande" 
+               data-ar="تواصل معنا لأي استفسارات">Get in touch with us for any inquiries</p>
+        </div>
+        <div class="contact-container">
+            <div class="contact-info-wrapper">
+                <div class="contact-info-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h4 data-en="Location" data-fr="Emplacement" data-ar="الموقع">Location</h4>
+                        <p>7A Rue des Jasmins, Quartier de la Medina</p>
+                        <p>Marrakech 40000, Morocco</p>
+                    </div>
+                </div>
+
+                <div class="contact-info-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h4 data-en="Phone" data-fr="Téléphone" data-ar="الهاتف">Phone</h4>
+                        <p>+212 600 000 999</p>
+                        <p>+212 524 123 456</p>
+                    </div>
+                </div>
+
+                <div class="contact-info-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h4 data-en="Email" data-fr="Email" data-ar="البريد الإلكتروني">Email</h4>
+                        <p>info@luxefashion.com</p>
+                        <p>support@luxefashion.com</p>
+                    </div>
+                </div>
+
+                <div class="contact-info-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h4 data-en="Opening Hours" data-fr="Heures d'ouverture" data-ar="ساعات العمل">Opening Hours</h4>
+                        <p data-en="Monday - Friday: 09:00 - 21:00" data-fr="Lundi - Vendredi: 09:00 - 21:00" data-ar="الاثنين - الجمعة: 09:00 - 21:00">Monday - Friday: 09:00 - 21:00</p>
+                        <p data-en="Saturday - Sunday: 10:00 - 20:00" data-fr="Samedi - Dimanche: 10:00 - 20:00" data-ar="السبت - الأحد: 10:00 - 20:00">Saturday - Sunday: 10:00 - 20:00</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form-wrapper">
+                <form class="contact-form" id="contactForm">
+                    <input type="text" class="form-input" placeholder="Your Name" data-en-placeholder="Your Name" data-fr-placeholder="Votre Nom" data-ar-placeholder="اسمك" required>
+                    <input type="email" class="form-input" placeholder="Your Email" data-en-placeholder="Your Email" data-fr-placeholder="Votre Email" data-ar-placeholder="بريدك الإلكتروني" required>
+                    <input type="tel" class="form-input" placeholder="Your Phone" data-en-placeholder="Your Phone" data-fr-placeholder="Votre Téléphone" data-ar-placeholder="هاتفك" required>
+                    <textarea class="form-input" rows="5" placeholder="Your Message" data-en-placeholder="Your Message" data-fr-placeholder="Votre Message" data-ar-placeholder="رسالتك" required></textarea>
+                    <button type="submit" class="submit-btn" data-en="Send Message" data-fr="Envoyer le Message" data-ar="إرسال الرسالة">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="newsletter-container">
+            <h2 data-en="Join Our Fashion Community" data-fr="Rejoignez Notre Communauté Mode" data-ar="انضم إلى مجتمع الموضة">Join Our Fashion Community</h2>
+            <p data-en="Subscribe to get special offers, exclusive updates, and style tips delivered directly to your inbox." 
+               data-fr="Abonnez-vous pour recevoir des offres spéciales, des mises à jour exclusives et des conseils de style directement dans votre boîte de réception." 
+               data-ar="اشترك للحصول على عروض خاصة وتحديثات حصرية ونصائح أنيقة مباشرة في بريدك الإلكتروني.">Subscribe to get special offers, exclusive updates, and style tips delivered directly to your inbox.</p>
+            <form class="newsletter-form" id="newsletterForm">
+                <input type="email" class="newsletter-input" placeholder="Enter your email address" data-en-placeholder="Enter your email address" data-fr-placeholder="Entrez votre adresse email" data-ar-placeholder="أدخل عنوان بريدك الإلكتروني" required>
+                <button type="submit" class="newsletter-btn" data-en="Subscribe" data-fr="S'abonner" data-ar="اشترك">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <h3>LUXE</h3>
+                <p data-en="Your destination for premium fashion. We curate the finest collection of shoes, t-shirts, and clothing to elevate your style." 
+                   data-fr="Votre destination pour la mode premium. Nous organisons la plus belle collection de chaussures, t-shirts et vêtements pour sublimer votre style." 
+                   data-ar="وجهتك للأزياء الفاخرة. نقوم بتنسيق أفضل مجموعة من الأحذية والقمصان والملابس لرفع مستوى أسلوبك.">Your destination for premium fashion. We curate the finest collection of shoes, t-shirts, and clothing to elevate your style.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link" aria-label="Pinterest"><i class="fab fa-pinterest"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4 data-en="Shop" data-fr="Boutique" data-ar="تسوق">Shop</h4>
+                <ul class="footer-links">
+                    <li><a href="#products" data-en="New Arrivals" data-fr="Nouveautés" data-ar="وصل حديثاً">New Arrivals</a></li>
+                    <li><a href="#products" data-en="Best Sellers" data-fr="Meilleures Ventes" data-ar="الأكثر مبيعاً">Best Sellers</a></li>
+                    <li><a href="#products" data-en="Sale" data-fr="Soldes" data-ar="تخفيضات">Sale</a></li>
+                    <li><a href="#categories" data-en="All Categories" data-fr="Toutes les Catégories" data-ar="جميع الفئات">All Categories</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4 data-en="Help" data-fr="Aide" data-ar="مساعدة">Help</h4>
+                <ul class="footer-links">
+                    <li><a href="#contact" data-en="Customer Service" data-fr="Service Client" data-ar="خدمة العملاء">Customer Service</a></li>
+                    <li><a href="#" data-en="Shipping Info" data-fr="Info Livraison" data-ar="معلومات الشحن">Shipping Info</a></li>
+                    <li><a href="#" data-en="Returns" data-fr="Retours" data-ar="المرتجعات">Returns</a></li>
+                    <li><a href="#" data-en="Size Guide" data-fr="Guide des Tailles" data-ar="دليل المقاسات">Size Guide</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4 data-en="Connect" data-fr="Connecter" data-ar="تواصل">Connect</h4>
+                <ul class="footer-links">
+                    <li><a href="#" data-en="About Us" data-fr="À Propos" data-ar="من نحن">About Us</a></li>
+                    <li><a href="#contact" data-en="Contact" data-fr="Contact" data-ar="اتصل">Contact</a></li>
+                    <li><a href="#" data-en="Blog" data-fr="Blog" data-ar="المدونة">Blog</a></li>
+                    <li><a href="#" data-en="Careers" data-fr="Carrières" data-ar="وظائف">Careers</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 LUXE Fashion. <span data-en="All rights reserved." data-fr="Tous droits réservés." data-ar="جميع الحقوق محفوظة.">All rights reserved.</span></p>
+        </div>
+    </footer>
+
+    <!-- Cart Modal -->
+    <div class="modal-overlay" id="cartModal">
+        <div class="cart-modal">
+            <div class="cart-header">
+                <h2 data-en="Shopping Cart" data-fr="Panier" data-ar="عربة التسوق">Shopping Cart</h2>
+                <button class="close-modal" id="closeCart" aria-label="Close Cart">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="cart-items" id="cartItems"></div>
+            <div class="cart-footer">
+                <div class="cart-total">
+                    <span data-en="Total:" data-fr="Total:" data-ar="المجموع:">Total:</span>
+                    <span id="cartTotal">$0.00</span>
+                </div>
+                <button class="checkout-btn" data-en="Proceed to Checkout" data-fr="Passer à la Caisse" data-ar="المتابعة للدفع">Proceed to Checkout</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Search Modal -->
+    <div class="modal-overlay" id="searchModal">
+        <div class="search-modal">
+            <button class="close-modal" id="closeSearch" aria-label="Close Search">
+                <i class="fas fa-times"></i>
+            </button>
+            <input type="text" class="search-input" id="searchInput" placeholder="Search products..." data-en-placeholder="Search products..." data-fr-placeholder="Rechercher des produits..." data-ar-placeholder="البحث عن المنتجات...">
+            <div class="search-results" id="searchResults"></div>
+        </div>
+    </div>
+
+    <!-- Wishlist Modal -->
+    <div class="modal-overlay" id="wishlistModal">
+        <div class="cart-modal">
+            <div class="cart-header">
+                <h2 data-en="My Wishlist" data-fr="Ma Liste de Souhaits" data-ar="قائمة الأمنيات">My Wishlist</h2>
+                <button class="close-modal" id="closeWishlist" aria-label="Close Wishlist">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="cart-items" id="wishlistItems"></div>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast">
+        <i class="fas fa-check-circle"></i>
+        <span id="toastMessage">Success!</span>
+    </div>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
